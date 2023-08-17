@@ -1,0 +1,57 @@
+.ImgContainer{
+    width: 100%;
+    position: relative;
+}
+
+.ImgContainer > img{
+width: 100%;
+}
+
+.Navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.logoSide{
+    display: flex;
+    align-items: center;
+}
+
+.logoSide a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+.cartSide{
+    display: flex;
+    align-items: center;
+}
+.cartSide select{
+    background-color: transparent;
+    border: none;
+}
+
+.cartSide i{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+
+
+@media (max-width: 950px) {
+    .ImgContainer > img{
+        height: 300px;
+        }
+}
+@media (max-width: 600px) {
+    .ImgContainer > img{
+        height: 200px;
+        }
+}
