@@ -1,0 +1,61 @@
+.Navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.logoSide{
+    display: flex;
+    align-items: center;
+}
+
+.logoSide a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+.cartSide{
+    display: flex;
+    align-items: center;
+}
+.cartSide select{
+    background-color: transparent;
+    border: none;
+}
+
+.cartSide i{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.PageDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.pageName{
+    font-size: 36px;
+}
+.logoSide > div .selected{
+    color: gray;
+    pointer-events: none;
+}
+
+
+
+@media (max-width: 950px) {
+    .ImgContainer > img{
+        height: 300px;
+        }
+}
+@media (max-width: 600px) {
+    .ImgContainer > img{
+        height: 200px;
+        }
+}

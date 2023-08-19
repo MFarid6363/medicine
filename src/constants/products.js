@@ -17,7 +17,8 @@ export const allProducts = [
     extraInfo: "GMO-free",
     relatedProductsId: [2,3,4],
     optionsId:[1,2,3,4,5],
-    price:39.95,
+    price:{1:39.95,2:39.95},
+    imgSrc:"/images/Daily-Herbals-Collagen.jpeg",
   },
   {
     id: 2,
@@ -38,17 +39,19 @@ export const allProducts = [
     extraInfo: "GMO-free",
     relatedProductsId: [1, 3, 4],
     optionsId:[1,2,3,4,5],
-    price:39.95,
+    price:{1:39.95,2:39.95},
+    imgSrc:"/images/Daily-Herbals-Cleanse.jpeg",
   },
   {
     id: 3,
-    name: "",
+    name: "GenBrain",
     characteristics: [],
     description: "",
     extraInfo: "",
     relatedProductsId: [1, 2, 4],
     optionsId:[1,2,3,4,5],
-    price:39.95,
+    price:{1:39.95,2:39.95},
+    imgSrc:"/images/Daily-Gerbals-GenBrain.jpeg",
 
   },
   {
@@ -59,7 +62,8 @@ export const allProducts = [
     extraInfo: "",
     relatedProductsId: [1,2,3],
     optionsId:[1,2,3,4,5],
-    price:39.95,
+    price:{1:39.95,2:39.95},
+    imgSrc:"/images/Daily-Herbals-Skincell-Advanced.jpeg",
   },
 ];
 

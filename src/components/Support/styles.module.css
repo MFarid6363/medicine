@@ -1,0 +1,50 @@
+.Container,
+.FormContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.inputContainer label {
+  margin-bottom: 5px;
+  color: rgb(102, 102, 102);
+}
+
+.inputContainer input,
+.inputContainer textarea {
+  padding: 10px 20px;
+  border: 1px solid rgb(227, 227, 227);
+}
+
+.inputContainer textarea {
+  height: 200px;
+  resize: none;
+}
+
+.FormContainer button {
+  padding: 10px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid rgb(227, 227, 227);
+  margin-bottom: 30px;
+}
+
+.Contact {
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  color: rgb(102, 102, 102);
+}
+.Contact span,
+.Contact p {
+  margin-bottom: 20px;
+}
+
+.Contact a{
+    text-decoration: none;
+}

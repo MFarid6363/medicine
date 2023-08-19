@@ -1,15 +1,19 @@
-import { createContext, useContext, useMemo, useState } from 'react';
+import { createContext, useContext, useMemo, useState } from "react";
 
 const UserContext = createContext({});
 
 export const UserProvider = ({ children }) => {
-  const [refresh,setRefresh] = useState(false)
-  
+  const [refresh, setRefresh] = useState(false);
+  const [currency, setCurrency] = useState(1);
+
   /* add ucun */
   return (
     <UserContext.Provider
       value={{
-        refresh,setRefresh
+        refresh,
+        setRefresh,
+        currency,
+        setCurrency,
       }}
     >
       {children}

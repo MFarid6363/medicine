@@ -1,0 +1,77 @@
+.MainContainer{
+padding-bottom: 30px;
+}
+
+.Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.name {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.price {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.characteristics {
+  list-style: disc;
+  margin-left: 50px;
+  font-size: 14px;
+}
+
+.characteristics li {
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.productExtraInfo {
+  color: gray;
+  margin-top: 0;
+}
+
+.Select {
+  margin: 60px 0;
+  color: gray;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid gray;
+}
+
+.Select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+.description {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.description span {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.description p {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+}

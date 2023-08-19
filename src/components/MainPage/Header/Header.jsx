@@ -13,13 +13,14 @@ import { PiHandbagLight } from "react-icons/pi";
 import { BsSearch } from "react-icons/bs";
 import styles from "./styles.module.css";
 const Header = () => {
-  const { refresh, setRefresh } = useUser();
+  const { refresh, setRefresh,currency,setCurrency } = useUser();
   useEffect(() => {
-    console.log(find(currencies, (e) => e.id == ls.get("cur")) || 1);
+    // console.log(find(currencies, (e) => e.id == ls.get("cur")) || 1);
   }, [refresh]);
 
   const handleCurrencyChange = (value) => {
     ls.set("cur", value);
+    setCurrency(value)
     setRefresh((prev) => !prev);
   };
   return (
@@ -29,9 +30,9 @@ const Header = () => {
         <div className={styles.logoSide}>
           <Image src={Logo} />
           <div>
-            <a>Shop</a>
-            <a>Faq</a>
-            <a>Support</a>
+            <a href="/shop">Shop</a>
+            <a href="/FAQ">FAQ</a>
+            <a href="/support">Support</a>
           </div>
         </div>
         <div className={styles.cartSide}>

@@ -164,18 +164,20 @@ a {
   outline: 0; /* removes dotted border */
 }
 a:visited {
-  color: #999;
+  color: inherit;
 }
 a:hover,
 a:focus,
 a:active {
   text-decoration: none;
+  color: inherit;
   /* add-custom:outline-rule-here; */
 }
 /* --------------------- Menus -------------------- */
 /* Main Menu */
 #nav {
 }
+
 #nav li {
 }
 #nav a {
