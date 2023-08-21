@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout/Layout";
 import SubPagesHeader from "@/components/Reusable/SubPagesHeader/SubPagesHeader";
 import React from "react";
-import Faq from '../components/FAQ/Faq.jsx'
+import Faq from '../components/FAQ/FaqComponent.jsx'
 
 const FAQ = () => {
   return (
