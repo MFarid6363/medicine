@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
+import Link from "next/link";
 
 function Support() {
   const [formData, setFormData] = useState({
