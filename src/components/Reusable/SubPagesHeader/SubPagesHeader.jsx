@@ -13,6 +13,7 @@ import { currencies } from "@/constants/currencies";
 import { find, map } from "lodash";
 import { lsCurrency } from "@/constants/localStorage";
 import { formatGoodsList } from "@/helpers/formatGoodsList";
+import Link from "next/link";
 
 const SubPagesHeader = ({ pageName, pagePath, children }) => {
   const router = useRouter();
@@ -35,28 +36,28 @@ const SubPagesHeader = ({ pageName, pagePath, children }) => {
     <div>
       <div className={styles.Navigation}>
         <div className={styles.logoSide}>
-          <a href="/">
+          <Link href="/">
             <Image src={Logo} />
-          </a>
+          </Link>
           <div>
-            <a
+            <Link
               className={router.asPath == "/shop" ? styles.selected : "˝"}
               href="/shop"
             >
               Shop
-            </a>
-            <a
+            </Link>
+            <Link
               className={router.asPath == "/FAQ" ? styles.selected : "˝"}
               href="/FAQ"
             >
               FAQ
-            </a>
-            <a
+            </Link>
+            <Link
               className={router.asPath == "/support" ? styles.selected : "˝"}
               href="/support"
             >
               Support
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.cartSide}>
@@ -70,12 +71,12 @@ const SubPagesHeader = ({ pageName, pagePath, children }) => {
               </option>
             ))}
           </select>
-          <a href="/Cart">
+          <Link href="/Cart">
             <i>
               <PiHandbagLight />
               <span>({goodsList.length})</span>
             </i>
-          </a>
+          </Link>
           {/* <i>
             <BsSearch />
           </i> */}

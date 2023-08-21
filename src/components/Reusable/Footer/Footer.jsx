@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Footer = () => {
   const router = useRouter();
@@ -9,34 +10,34 @@ const Footer = () => {
   return (
     <div className={styles.Container}>
       <div className={styles.Links}>
-        <a
+        <Link
           className={
             router.asPath == "/privacy-statement" ? styles.selected : "˝"
           }
           href="/privacy-statement"
         >
           Privacy Statement
-        </a>
-        <a
+        </Link>
+        <Link
           className={router.asPath == "/terms-of-use" ? styles.selected : "˝"}
           href="/terms-of-use"
         >
           Terms of Use
-        </a>
-        <a
+        </Link>
+        <Link
           className={
             router.asPath == "/delivery-return-policy" ? styles.selected : "˝"
           }
           href="/delivery-return-policy"
         >
           Delivery & Return Policy
-        </a>
-        <a
+        </Link>
+        <Link
           className={router.asPath == "/support" ? styles.selected : "˝"}
           href="/support"
         >
           Support
-        </a>
+        </Link>
       </div>
       <div className={styles.info}>
         <div>

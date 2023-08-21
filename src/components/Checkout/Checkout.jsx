@@ -7,6 +7,7 @@ import map from "lodash/map";
 import { reduce } from "lodash";
 import BasicAlerts from "../Reusable/Alert/Alert";
 import { getCurrency } from "@/helpers/getCurrency";
+import Link from "next/link";
 
 const CheckoutContainer = () => {
   const { goodsList, currency } = useUser();
@@ -188,7 +189,8 @@ const CheckoutContainer = () => {
                       item.option.priceMultiplication *
                       item.price[currency] *
                       item.quantity
-                    ).toFixed(2)} {getCurrency(currency)}
+                    ).toFixed(2)}{" "}
+                    {getCurrency(currency)}
                   </span>
                 </>
               ))}
@@ -239,9 +241,9 @@ const CheckoutContainer = () => {
             />
             <p>
               You agree to the{" "}
-              <a href="/terms-of-use" target="_blank">
+              <Link href="/terms-of-use" target="_blank">
                 Terms of Use
-              </a>
+              </Link>
               . You authorize regular charges to your credit card *
             </p>
           </div>

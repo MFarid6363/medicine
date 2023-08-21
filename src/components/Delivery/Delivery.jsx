@@ -1,8 +1,13 @@
+import Link from "next/link";
 import React from "react";
 
 const Delivery = () => {
   return (
-    <div style={{margin:"0 10px 50px 10px"}} id="content" class="site-content">
+    <div
+      style={{ margin: "0 10px 50px 10px" }}
+      id="content"
+      class="site-content"
+    >
       <div class="container clearfix">
         <div class="row">
           <div id="primary" class="content-area fullwidth">
@@ -56,9 +61,9 @@ const Delivery = () => {
                               <p>
                                 If any particular question arises, contact us
                                 via{" "}
-                                <a href="mailto:support@daily-herbals.com">
+                                <Link href="mailto:support@daily-herbals.com">
                                   support@daily-herbals.com
-                                </a>
+                                </Link>
                                 .
                               </p>
                               <p>

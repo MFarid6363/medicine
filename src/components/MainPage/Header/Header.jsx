@@ -14,6 +14,7 @@ import { BsSearch } from "react-icons/bs";
 import styles from "./styles.module.css";
 import { lsCurrency } from "@/constants/localStorage";
 import { formatGoodsList } from "@/helpers/formatGoodsList";
+import Link from "next/link";
 const Header = () => {
   const {
     refresh,
@@ -46,9 +47,9 @@ const Header = () => {
         <div className={styles.logoSide}>
           <Image src={Logo} />
           <div>
-            <a href="/shop">Shop</a>
-            <a href="/FAQ">FAQ</a>
-            <a href="/support">Support</a>
+            <Link href="/shop">Shop</Link>
+            <Link href="/FAQ">FAQ</Link>
+            <Link href="/spport">Support</Link>
           </div>
         </div>
         <div className={styles.cartSide}>
@@ -60,12 +61,12 @@ const Header = () => {
               <option value={currency.id}>{currency.text}</option>
             ))}
           </select>
-          <a href="/Cart">
+          <Link href="/Cart">
             <i>
               <PiHandbagLight />
               <span>({goodsList.length})</span>
             </i>
-          </a>
+          </Link>
           {/* <i>
             <BsSearch />
           </i> */}

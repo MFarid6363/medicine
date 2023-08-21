@@ -59,9 +59,9 @@ function Support() {
       <div className={styles.Contact}>
         <p className={styles.info}>
           Or you can send an email to:
-          <a href="mailto:support@daily-herbals.com">
+          <Link href="mailto:support@daily-herbals.com">
             <strong> support@daily-herbals.com</strong>
-          </a>{" "}
+          </Link>{" "}
         </p>
         <span>+441313670108</span>
       </div>

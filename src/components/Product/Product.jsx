@@ -4,19 +4,20 @@ import Image from "next/image";
 import ls from "local-storage";
 import useUser from "@/providers/userProvider";
 import { getCurrency } from "@/helpers/getCurrency";
+import Link from "next/link";
 
 const Product = ({ product }) => {
   const { currency } = useUser();
   return (
     <div className={styles.Container}>
-      <a href={`/Product/${product.id}`}>
+      <Link href={`/Product/${product.id}`}>
         <Image
           width={225}
           height={300}
           src={product.imgSrc}
           alt="product image"
         />
-      </a>
+      </Link>
       <span className={styles.name}>{product.name}</span>
       <span className={styles.price}>
         {product.price[currency]} {getCurrency(currency)}

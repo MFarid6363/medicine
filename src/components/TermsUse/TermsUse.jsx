@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const TermsUse = () => {
@@ -113,9 +114,9 @@ const TermsUse = () => {
                                 are processed the same day. Please contact our
                                 customer service department for additional
                                 assistance by email:{" "}
-                                <a href="mailto:support@daily-herbals.com">
+                                <Link href="mailto:support@daily-herbals.com">
                                   support@daily-herbals.com
-                                </a>
+                                </Link>
                                 .
                               </p>
                               <p>
@@ -264,9 +265,9 @@ const TermsUse = () => {
                               <p>Phone: +441313670108</p>
                               <p>
                                 Email:{" "}
-                                <a href="mailto:support@daily-herbals.com">
+                                <Link href="mailto:support@daily-herbals.com">
                                   support@daily-herbals.com
-                                </a>
+                                </Link>
                               </p>
                               <p>
                                 For fastest service feel free to contact us via

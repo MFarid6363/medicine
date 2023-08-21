@@ -5,6 +5,7 @@ import Features from "./Features/Features";
 import Categories from "./Categories/Categories";
 import Compilation from "./Compilation/Compilation";
 import styles from "./styles.module.css";
+import Link from "next/link";
 
 const MainPage = () => {
   return (
@@ -21,12 +22,9 @@ const MainPage = () => {
         productsId={[1, 2, 3, 4]}
       />
       <div className={styles.btnContainer}>
-        <a
-          href="/shop"
-          className={`${styles.allProductBtn} ${styles.button} ${styles.type1}`}
-        >
-          All products
-        </a>
+        <Link className={`${styles.allProductBtn} ${styles.button} ${styles.type1}`} href="/shop">
+            All products
+        </Link>
       </div>
     </Layout>
   );

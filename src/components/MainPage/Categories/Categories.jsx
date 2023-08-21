@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 import map from "lodash/map";
 import { categories } from "@/constants/categories";
+import Link from "next/link";
 const Categories = () => {
   return (
     <div className={styles.Container}>
@@ -18,12 +19,12 @@ const Categories = () => {
           />
           <div className={styles.categoryDescContainer}>
             <h4>{cat.description}</h4>
-            <a href={`/categories/${cat.id}`}>
+            <Link href={`/categories/${cat.id}`}>
               View Products{" "}
               <i>
                 <FiArrowRight />
               </i>
-            </a>
+            </Link>
           </div>
         </div>
       ))}

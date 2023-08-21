@@ -6,6 +6,7 @@ import useUser from "@/providers/userProvider";
 import Image from "next/image";
 import ls from "local-storage";
 import { lsBusket } from "@/constants/localStorage";
+import Link from "next/link";
 
 function CartContainer({ products, onChangeProductQuantity, onRemoveProduct }) {
   const { currency } = useUser();
@@ -17,18 +18,18 @@ function CartContainer({ products, onChangeProductQuantity, onRemoveProduct }) {
             <li className={styles.row} key={index}>
               <div className={`${styles.col} ${styles.left}`}>
                 <div className={styles.thumbnail}>
-                  <a href="#">
+                  <Link href={`/Product/${product.id}`}>
                     <Image
                       src={product.image}
                       width={150}
                       height={200}
                       alt={product.name}
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className={styles.detail}>
                   <div className={styles.name}>
-                    <a href="#">{product.name}</a>
+                    <Link href={`/Product/${product.id}`}>{product.name}</Link>
                   </div>
                   <div className={styles.description}>
                     {product.option.name}
