@@ -67,6 +67,7 @@ const Header = () => {
               <span>({goodsList.length})</span>
             </i>
           </Link>
+          
           {/* <i>
             <BsSearch />
           </i> */}
