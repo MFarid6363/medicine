@@ -2,7 +2,7 @@ import React from "react";
 
 const Delivery = () => {
   return (
-    <div style={{marginBottom:"50px"}} id="content" class="site-content">
+    <div style={{margin:"0 10px 50px 10px"}} id="content" class="site-content">
       <div class="container clearfix">
         <div class="row">
           <div id="primary" class="content-area fullwidth">

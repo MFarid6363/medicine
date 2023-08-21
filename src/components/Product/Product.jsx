@@ -9,7 +9,7 @@ const Product = ({ product }) => {
   const { currency } = useUser();
   return (
     <div className={styles.Container}>
-      <a href={`Product/${product.id}`}>
+      <a href={`/Product/${product.id}`}>
         <Image
           width={225}
           height={300}
@@ -21,7 +21,7 @@ const Product = ({ product }) => {
       <span className={styles.price}>
         {product.price[currency]} {getCurrency(currency)}
       </span>
-      <span className={styles.showMore}>Show More</span>
+      {/* <span className={styles.showMore}>Show More</span> */}
     </div>
   );
 };

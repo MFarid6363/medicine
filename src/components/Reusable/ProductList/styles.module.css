@@ -1,6 +1,16 @@
+.Container{
+    padding: 20px;
+}
 .ProductList{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
+
+@media all and (max-width: 599px) {
+    .ProductList{
+        justify-content: center;
+    }
+}
+

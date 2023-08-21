@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 50px;
+  overflow-x: hidden;
   margin-bottom: 50px;
 }
 .Category {
@@ -59,7 +60,27 @@
     border-radius: 5px;
   }
 }
+@media (max-width: 500px) {
+  .Category {
+    flex-basis: 100%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .Category img {
+    height: 480px;
+    min-width: 320px;
+  }
 
+}
+
+@media (max-width: 410px) {
+  .categoryDescContainer {
+    width: 100px;
+  }
+}
 @keyframes pulsate {
   50% {
     color: #fff;

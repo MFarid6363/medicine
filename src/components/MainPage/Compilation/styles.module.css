@@ -18,3 +18,9 @@
   font-size: 14px;
   color: rgb(153, 153, 153);
 }
+
+@media all and (max-width: 650px) {
+  .containter {
+    justify-content: center;
+  }
+}

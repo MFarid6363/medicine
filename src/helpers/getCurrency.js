@@ -6,3 +6,11 @@ export const getCurrency = (id) => {
     return "$"
   }
 };
+export const getCurrencyName = (id) => {
+  if (id == 2) {
+    return "EUR";
+  }
+  else{
+    return "USD"
+  }
+};

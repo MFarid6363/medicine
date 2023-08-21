@@ -10,7 +10,7 @@ const Counter = ({ count, setCount, onClick }) => {
           className={styles.Icon}
           onClick={() =>
             setCount((prev) => {
-              if (prev >= 1) return prev - 1;
+              if (prev > 1) return prev - 1;
               return prev;
             })
           }

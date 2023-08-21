@@ -36,3 +36,27 @@
 .Feature:nth-child(1){
     border: none;
 }
+
+@media (max-width: 600px) {
+.Container{
+    width: 90%;
+}
+.Feature{
+    border-left: none;
+}
+}
+
+@media (max-width: 480px) {
+    .Container{
+        flex-direction: column;
+        width: 250px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .Feature{
+        margin-bottom: 20px;
+    }
+    .Feature:nth-child(1){
+        margin-top: 20px;
+    }
+}

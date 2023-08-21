@@ -1,11 +1,14 @@
-.MainContainer{
-padding-bottom: 30px;
+.MainContainer {
+  padding-bottom: 30px;
+  margin: 0 10px;
 }
 
 .Container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+  width: 90%;
 }
 
 .Details {
@@ -74,4 +77,15 @@ padding-bottom: 30px;
 .description p {
   font-size: 14px;
   color: rgb(102, 102, 102);
+}
+.calculatedPrice {
+  margin-bottom: 10px;
+}
+
+@media all and (max-width: 599px) {
+  .Container {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
 }

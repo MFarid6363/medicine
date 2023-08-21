@@ -1,57 +1,74 @@
-.ImgContainer{
-    width: 100%;
-    position: relative;
+.ImgContainer {
+  width: 100%;
+  position: relative;
 }
 
-.ImgContainer > img{
-width: 100%;
+.ImgContainer > img {
+  width: 100%;
 }
 
-.Navigation{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%);
+.Navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
-.logoSide{
-    display: flex;
-    align-items: center;
+.logoSide {
+  display: flex;
+  align-items: center;
 }
 
-.logoSide a{
-    text-decoration: none;
-    margin-right: 10px;
+.logoSide a {
+  text-decoration: none;
+  margin-right: 10px;
 }
-.cartSide{
-    display: flex;
-    align-items: center;
+.cartSide {
+  display: flex;
+  align-items: center;
 }
-.cartSide select{
-    background-color: transparent;
-    border: none;
-}
-
-.cartSide i{
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    margin: 0 10px;
+.cartSide select {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-
+.cartSide i {
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
 
 @media (max-width: 950px) {
-    .ImgContainer > img{
-        height: 300px;
-        }
+  .ImgContainer > img {
+    height: 300px;
+  }
+  .logoSide img{
+    width: 100px;
+    height: 100px;
+  }
 }
+
 @media (max-width: 600px) {
-    .ImgContainer > img{
-        height: 200px;
-        }
+  .ImgContainer > img {
+    height: 200px;
+  }
+  .cartSide i{
+    font-size: 16px;
+  }
+  .logoSide img{
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 350px) {
+  .ImgContainer > img {
+    height: 200px;
+  }
 }

@@ -12,17 +12,33 @@ import Logo from "../../../../public/images/daily-herbals-logo.png";
 import { PiHandbagLight } from "react-icons/pi";
 import { BsSearch } from "react-icons/bs";
 import styles from "./styles.module.css";
+import { lsCurrency } from "@/constants/localStorage";
+import { formatGoodsList } from "@/helpers/formatGoodsList";
 const Header = () => {
-  const { refresh, setRefresh,currency,setCurrency } = useUser();
+  const {
+    refresh,
+    setRefresh,
+    currency,
+    goodsList,
+    setCurrency,
+    setGoodsList,
+  } = useUser();
   useEffect(() => {
     // console.log(find(currencies, (e) => e.id == ls.get("cur")) || 1);
   }, [refresh]);
 
   const handleCurrencyChange = (value) => {
-    ls.set("cur", value);
-    setCurrency(value)
+    ls.set(lsCurrency, value);
+    setCurrency(value);
     setRefresh((prev) => !prev);
   };
+
+  useEffect(() => {
+    formatGoodsList(setGoodsList);
+    if (ls?.get(lsCurrency)) {
+      setCurrency(ls.get(lsCurrency));
+    }
+  }, []);
   return (
     <div className={styles.ImgContainer}>
       <Image height={500} src={HeadImg} />
@@ -37,18 +53,22 @@ const Header = () => {
         </div>
         <div className={styles.cartSide}>
           <select
-            value={find(currencies, (e) => e.id == ls.get("cur"))?.id || 1}
+            value={find(currencies, (e) => e.id == ls.get(lsCurrency))?.id || 1}
             onChange={(event) => handleCurrencyChange(event.target.value)}
           >
             {map(currencies, (currency) => (
               <option value={currency.id}>{currency.text}</option>
             ))}
           </select>
-          <i>
-            <PiHandbagLight />
-            <span>2</span>
-          </i>
-          <BsSearch />
+          <a href="/Cart">
+            <i>
+              <PiHandbagLight />
+              <span>({goodsList.length})</span>
+            </i>
+          </a>
+          {/* <i>
+            <BsSearch />
+          </i> */}
         </div>
       </div>
     </div>

@@ -57,3 +57,25 @@
   color: gray;
   pointer-events: none;
 }
+
+@media all and (max-width: 650px) {
+  .Container {
+   width: 100%;
+   padding: 20px;
+  }
+}
+
+@media all and (max-width: 650px) {
+    .Links{
+      flex-direction: column;
+    }
+    .Links a{
+      margin-bottom: 5px;
+    }
+    .info{
+      flex-direction: column;
+    }
+    .info div:nth-child(2) {
+      align-items: flex-start;
+    }
+}

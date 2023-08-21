@@ -1,0 +1,108 @@
+.Form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.Form div {
+  flex-basis: 45%;
+}
+.Container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+  justify-content: center;
+  min-width: 300px;
+}
+.Container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.Order h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.Container div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.Container div {
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.Container div label {
+  margin-bottom: 5px;
+}
+
+.Container div input,
+.Container div textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgb(227, 227, 227);
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.Form button {
+  padding: 20px;
+  background-color: black;
+  opacity: 0.5;
+  margin-top: 20px;
+  width: 70%;
+  min-width: 300px;
+}
+
+.OrderInfo {
+  background-color: rgb(227, 227, 227);
+  padding: 20px;
+  width: 70%;
+  min-width: 300px;
+}
+.OrderInfo div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(128, 128, 128);
+  color: black;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.OrderInfo div:last-child {
+  border: none;
+  font-weight: 600;
+}
+.head {
+  color: rgb(128, 128, 128);
+}
+.select{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.select a{
+  font-weight: 600;
+}
+.select p{
+  margin-bottom: 0;
+}
+
+@media all and (max-width: 700px) {
+  .Form{
+    flex-direction: column;
+  }
+  .Form div {
+    flex-basis: 100%;
+  }
+  .OrderInfo {
+    width: 100%;
+  }
+  .Form button {
+    width: 100%;
+  }
+}
