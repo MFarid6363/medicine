@@ -44,7 +44,6 @@ const CheckoutContainer = () => {
       ls.set(lsBusket, []);
       setAlert("success");
       setAlertMsg("Order succesfully created");
-      console.log(formData);
     } else {
       setAlert("error");
       setAlertMsg("Please accept terms of use");

@@ -9,7 +9,6 @@ import { lsBusket } from "@/constants/localStorage";
 
 function CartContainer({ products, onChangeProductQuantity, onRemoveProduct }) {
   const { currency } = useUser();
-  console.log(products);
   return (
     <section className="container">
       <ul className="products">
