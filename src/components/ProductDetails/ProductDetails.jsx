@@ -81,13 +81,15 @@ const ProductDetails = ({ product }) => {
             {map(bootleSize, (item) => {
               if (find(product.optionsId, (option) => option == item.id)) {
                 return (
-                  <option value={item.priceMultiplication}>{item.name}</option>
+                  <option value={item.id}>{item.name}</option>
                 );
               }
             })}
           </select>
           {option && (
             <span className={styles.calculatedPrice}>
+              {console.log(option)}
+
               {(
                 product.price[currency] *
                 getSelectedOption(option).priceMultiplication
